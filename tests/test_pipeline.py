@@ -83,3 +83,4 @@ class TestPipelineComponents:
         assert result.task_id == "RATE-LIMIT-01"
         assert len(result.chain_of_thought) == 1
         assert result.confidence_score == 0.98
+

@@ -68,3 +68,4 @@ class CustomerSupportTriage(BaseModel):
         if len(v) > 280:
             raise ValueError("Summary must not exceed 280 characters.")
         return v
+

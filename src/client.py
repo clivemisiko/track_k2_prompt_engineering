@@ -83,7 +83,7 @@ class GeminiClient:
         max_retries: Optional[int] = None,
     ):
         self.api_key = api_key or get_gemini_api_key()
-        self.default_model = default_model or os.getenv("DEFAULT_MODEL", "gemini-3.8-flash")
+        self.default_model = default_model or os.getenv("DEFAULT_MODEL", "gemini-3-flash-preview")
         
         env_temp = os.getenv("DEFAULT_TEMPERATURE")
         self.default_temperature = default_temperature if default_temperature is not None else (float(env_temp) if env_temp else 0.2)
